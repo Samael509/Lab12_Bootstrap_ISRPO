@@ -10,48 +10,49 @@
     <link rel="stylesheet" href="custom.css"/>
 </head>
 <body>
-    <div class="row justify-content-center">
-        <div class="col-12 d-flex flex-row flex-wrap gap-3">
-            <!-- Карточка товара -->
-            <div class="card" style="width: 18rem;">
-                <img src="https://avatars.mds.yandex.net/i?id=c70b1ebab361a3f01209fc128be7dd967c60cd42-10756139-images-thumbs&n=13" height="215" class="card-img-top" alt="Название товара" />
-                <div class="card-body">
-                    <span class="badge rounded-pill text-bg-warning">★★★★☆ 4.5</span>
-                    <h5 class="card-title">Ноутбук</h5>
-                    <p class="card-text">Мощный ноут для работы с рендером и игр</p>
-                    <h4 class="card-price">89 990 ₽</h4>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                    <p></p>
-                    <button type="button" class="btn btn-success w-100">Купить</button>
-                </div>
-            </div>
-            <!-- вторая -->
-            <div class="card" style="width: 18rem;">
-                <img src="https://avatars.mds.yandex.net/i?id=0b445d954d86adc13ef8cc95f334b0dc08563272-5235774-images-thumbs&n=13" height="215" class="card-img-top" alt="Название товара" />
-                <div class="card-body">
-                    <span class="badge rounded-pill text-bg-warning">★★★★★ 5</span>
-                    <h5 class="card-title">RTX 5090</h5>
-                    <p class="card-text">Видеокарта</p>
-                    <h4 class="card-price">470 000 ₽</h4>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                    <p></p>
-                    <button type="button" class="btn btn-success w-100">Купить</button>
-                </div>
-            </div>
-            <!-- третья -->
-            <div class="card" style="width: 18rem;">
-                <img src="https://avatars.mds.yandex.net/i?id=0ddf4cc58b0462999c65f576155fe5c6ae5ec27f-4965044-images-thumbs&n=13" height="215" class="card-img-top" alt="Название товара" />
-                <div class="card-body">
-                    <span class="badge rounded-pill text-bg-danger">★★☆☆☆ 2</span>
-                    <h5 class="card-title">Корпус</h5>
-                    <p class="card-text">Корпус для пк</p>
-                    <h4 class="card-price">1 990 ₽</h4>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                    <p></p>
-                    <button type="button" class="btn btn-success w-100">Купить</button>
-                </div>
-            </div>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">MyPortfolio</a>
+        <!-- Кнопка для мобильного меню -->
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Пункты меню -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+            <a class="nav-link active" href="#home">Главная</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#about">О нас</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#services">Услуги</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#contact">Контакты</a>
+            </li>
+        </ul>
         </div>
+    </div>
+    </nav>
+
+    <!-- Hero секция -->
+    <div class="container-fluid bg-light py-5" id="home">
+    <div class="container text-center">
+        <h1 class="display-4">Добро пожаловать!</h1>
+        <p class="lead">Это пример сайта, созданного с помощью Bootstrap 5</p>
+        <button class="btn btn-primary btn-lg">Узнать больше</button>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
